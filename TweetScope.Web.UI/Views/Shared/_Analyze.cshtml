@@ -1,10 +1,10 @@
 ﻿<!-- ******FEATURES****** -->
-<section id="features" class="features section">
+<section id="analyze" class="features section">
     <div class="container text-center">
         <h2 class="title">Hemen Analiz Etmeye Başlayın !</h2>
         @using (Html.BeginForm("Analyze","Home", FormMethod.Get))
         {
-            @("Analiz etmek istediğiniz kullanıcı: Analiz etmek istediğiniz kullanıcı: ")
+            @("Analiz etmek istediğiniz kullanıcı: ")
             <input type="text" class="inputKullanici" name="screenName" placeholder="Örnek: @("@")TweetScope"><br />
             <p class="text-center">
                 <button type="submit" class="btn btn-cta-secondary">Başla</button>
