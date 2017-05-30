@@ -22,7 +22,6 @@ namespace TwitterHandle
 
         public static List<Status> SearchUserTweet(string screenName)
         {
-            
                 var twitterCtx = new TwitterContext(Authorizer);
                 List<Status> searchResults = new List<Status>();
                 int maxNumberToFind = 200;

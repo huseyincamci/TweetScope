@@ -159,6 +159,7 @@
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\min\main-min.js" />
+    <Content Include="Content\plugins\bootstrap\css\bootstrap-flatly.css" />
     <Content Include="Content\plugins\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\plugins\bootstrap\js\bootstrap.min.js" />
@@ -185,6 +186,7 @@
     <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\plugins\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="Content\plugins\prism\.DS_Store" />
+    <Content Include="tweets.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
