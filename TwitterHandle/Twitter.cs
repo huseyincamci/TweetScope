@@ -45,24 +45,24 @@ namespace TwitterHandle
                     searchResults.AddRange(tweets);
                 }
 
-                do
-                {
-                    var id = lastId - 1;
-                    tweets = (from tweet in twitterCtx.Status
-                              where tweet.Type == StatusType.User &&
-                                  tweet.ScreenName == screenName &&
-                                  tweet.Count == maxNumberToFind &&
-                                  tweet.MaxID == id
-                              select tweet).ToList();
+                //do
+                //{
+                //    var id = lastId - 1;
+                //    tweets = (from tweet in twitterCtx.Status
+                //              where tweet.Type == StatusType.User &&
+                //                  tweet.ScreenName == screenName &&
+                //                  tweet.Count == maxNumberToFind &&
+                //                  tweet.MaxID == id
+                //              select tweet).ToList();
 
-                    searchResults.AddRange(tweets);
-                    lastId = tweets.Min(x => x.StatusID);
-                    pagination++;
-                    if (!(pagination < maxPagination) || pagination >= 16)
-                    {
-                        break;
-                    }
-                } while (true);
+                //    searchResults.AddRange(tweets);
+                //    lastId = tweets.Min(x => x.StatusID);
+                //    pagination++;
+                //    if (!(pagination < maxPagination) || pagination >= 16)
+                //    {
+                //        break;
+                //    }
+                //} while (true);
                 return searchResults;
             
         }
