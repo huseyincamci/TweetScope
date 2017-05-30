@@ -46,11 +46,12 @@ namespace TwitterHandle
             string[] allWords = text.Split(separators,
             StringSplitOptions.RemoveEmptyEntries);
 
-
-
             foreach (var word in allWords)
             {
-                words.Add(word.ToLowerInvariant());
+                if (word.Length >= 3)
+                {
+                    words.Add(word.ToLowerInvariant());
+                }
             }
             return words;
         }
